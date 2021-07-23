@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- css atached  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/059390d854.js" crossorigin="anonymous"></script>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="searchbar" id="searchbar">
+            <div class="searchbox">
+                <input type="text" id="inputbox" class="inputbox" placeholder="Enter City Name">
+            </div>
+            <div class="searchbtn">
+                <button type="button" id="btn" class="btn">Search</button>
+            </div>
+        </div>
+
+        <div class="weatherbody" id="weatherbody">
+            <!-- weather logo  -->
+            <div class="weathertop" id="weathertop">
+                <div class="minimg">
+                    <i class="fas fa-temperature-low" style="font-size: 40px; color: turquoise;"></i>
+                </div>
+                <div class="mintemp" style="font-size: 20px;" id="mintemp">
+                    <div class="mintempdeg" id="mintempdeg">
+                        25&deg;C
+                    </div>
+                    <div class="mintempword">
+                        (Min)
+                    </div>
+                </div>
+
+                <div class="weatherimg" id="weatherimg">
+                    <!-- <i class="fas fa-cloud-sun" id="img"></i> -->
+                    <i class="fas" id="img"></i>
+                </div>
+
+                <div class="maximg" id="maximg">
+                    <i class="fas fa-temperature-high"  style="font-size: 40px; color: turquoise;"></i>
+                </div>
+                <div class="maxtemp" style="font-size: 20px;">
+                    <div class="maxtempdeg"  id="maxtempdeg" id="maxtemp">
+                        30&deg;C
+                    </div>
+                    <div class="maxtempword">
+                        (Max)
+                    </div>
+                </div>
+            </div>
+
+            <div class="feel" id="feel">
+                Feels Like 28&deg;C
+            </div>
+            
+            <!-- weather - temp, status, place  -->
+            <div class="weather" id="weather">
+                <div class="tempstatus">
+                    <div class="temp" id="temp">28.57&deg;C</div>
+                    <div class="weatherinfo">
+                        <div class="status" id="status">Clouds</div>
+                        <div class="place" id="place">Mankar, IN</div>
+                    </div>
+                </div>
+                <div class="datetime" id="datetime">
+                    <div class="date" id="date">07/18/2021</div>
+                    <div class="time" id="time">3:29:29:PM</div>
+                </div>
+            </div>
+            <!-- weather - sunset humidity, pressure, wind  -->
+            <div class="weatherstatus" id="weatherstatus">
+
+                <div class="sunriseimg">
+                    <i class="far fa-sun" style="font-size: 20px; color: turquoise;"></i>
+                </div>
+                <div class="sunrise">
+                    <div class="sunriseword">
+                        Sunrise
+                    </div>
+                    <div class="sunrisetime" id="sunrisetime">
+                        05:00 AM
+                    </div>
+                </div>
+
+                <div class="sunimg">
+                    <i class="fas fa-sun" style="font-size: 20px; color: turquoise;"></i>
+                </div>
+                <div class="sunset">
+                    <div class="sunsetword">
+                        Sunset
+                    </div>
+                    <div class="suntime" id="sunsettime">
+                        15:26 PM
+                    </div>
+                </div>
+
+                <div class="humidityimg">
+                    <!-- <i class="fas fa-temperature-high" style="font-size: 20px;"></i> -->
+                    <i class="fas fa-snowflake" style="font-size: 20px; color: turquoise;"></i>
+                </div>
+                <div class="humidity">
+                    <div class="humidityword">
+                        Humidity 
+                    </div>
+                    <div class="humiditylevel" id="humiditylevel"> 
+                        74%
+                    </div>
+                </div>
+
+                <div class="pressureimg">
+                    <i class="fas fa-cloud-showers-heavy" style="font-size: 20px; color: turquoise;"></i>
+                </div>
+                <div class="pressure">
+                    <div class="pressureword">
+                        Pressure
+                    </div>
+                    <div class="pressurelevel" id="pressurelevel">
+                        1014 MM
+                    </div>
+                </div>
+
+                <div class="windimg">
+                    <i class="fas fa-wind" style="font-size: 20px; color: turquoise;"></i>
+                </div>
+                <div class="wind">
+                    <div class="windword">
+                        Wind
+                    </div>
+                    <div class="windlevel" id="windlevel">
+                        2.24
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

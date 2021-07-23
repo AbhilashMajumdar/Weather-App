@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    background-color: black;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.weatherbody{
+    width: 600px;
+    text-align: center;
+    border-radius: 8px;
+    display: none;
+}
+
+.weather{
+    display: flex;
+    align-items: center;
+    background-color: turquoise;
+    text-align: center;
+}
+
+.inputbox{
+    padding: 7px 40px;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+.btn{
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    background-color: turquoise;
+    color: white;
+    font-size: 18px;
+}
+
+.weatherbody{
+    background-color: white;
+}
+
+.weatherimg{
+    text-align: center;
+    padding: 20px 0;
+}
+
+#img{
+    font-size: 80px;
+    color: turquoise;
+}
+
+.temp{
+    font-size: 35px;
+    margin-left: -40px;
+    margin-right: 40px;
+}
+
+.tempstatus {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: auto;
+    padding: 30px 75px;
+}
+
+.datetime{
+    text-align: center;
+    margin-left: 50px;
+}
+
+.status{
+    font-size: 30px;
+}
+
+.weatherstatus {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 18px;
+}
+
+#hum-img{
+    width: 40px;
+    height: 40px;
+}
+
+.weathertop{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mintemp {
+    margin-right: 25px;
+}
+
+.maximg{
+    margin-left: 25px;
+}
+
+.date{
+    margin-bottom: 10px;
+}
+
+.datetime{
+    font-size: 18px;
+}
+
+.feel{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.minimg, .mintemp, .maximg, .maxtemp{
+    margin-top: 15px;
+}
+
+/* respomsive for mobile  */
+@media only screen and (max-width: 500px) {
+
+    #searchbar{
+        margin-left: 115px;
+    }
+
+    #weathertop {
+        margin-left: 140px;
+    }
+
+    #mintemp {
+        margin-right: 0px;
+    }
+    
+    #maximg{
+        margin-left: 0px;
+    }
+
+    #weather{
+        margin-left: 100px;
+    }
+
+    #weatherstatus{
+        margin-left: 120px;
+        margin-right: 10px;
+    }
+
+    #datetime{
+        margin-left: 15px;
+    }
+
+    #feel{
+        margin-left: 145px;
+    }
+}
